@@ -1,0 +1,24 @@
+FileParser ---> Model ---> Translator ---> Model ---> FileBuilder
+
+So the idea that t we have a Parser for each file (Csproj, Assemblyinfo, Nuspec, appconfig(might not need), packages.config)
+that basically uses XDocument to load the XML of a given file, and then have methods to extract attributes and elements like this:
+
+        public OldCsProj(string path)
+        {
+            _content = XDocument.Load(path);
+        }
+
+        private IEnumerable<string> ExtractValue(string elementName)
+        {
+            XNamespace ns= "http://schemas.microsoft.com/developer/msbuild/2003";
+            return _content.Descendants(ns + elementName).Select(i => i.Value);
+        }
+
+        private IEnumerable<string> ExtractAttribute(string elementName, string attributeName)
+        {
+            XNamespace ns= "http://schemas.microsoft.com/developer/msbuild/2003";
+            return _content.Descendants(ns + elementName).Select(i => i.Attribute(attributeName)).Select(i => i.Value);
+        }
+      
+ What we then need is a model layer of concrete types like "Project", "Nuspec" and so on that a translator can take by simply calling
+ "NuspecLoader.Load()" returnign a Nuspec Object that I can provide to a "Project.Build() / Project.Save()"
