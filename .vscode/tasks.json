@@ -1,0 +1,35 @@
+{
+    "version": "0.1.0",
+    "command": "cmd",
+    "isShellCommand": true,
+    "showOutput": "silent",
+    "args": [
+    ],
+    "tasks": [
+        {
+            "taskName": "run",
+            "suppressTaskName": true,
+            "command": "dotnet",
+            "args": ["run", "--project", "${workspaceRoot}/DotNetCoreConverter"],
+            "showOutput": "always",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "build",
+            "suppressTaskName": true,
+            "command": "dotnet",
+            "args": ["build", "${workspaceRoot}/DotNetCoreConverter"],
+            "showOutput": "always",
+            "problemMatcher": "$msCompile",
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "restore",
+            "suppressTaskName": true,
+            "command": "dotnet",
+            "args": ["restore", "${workspaceRoot}/DotNetCoreConverter"],
+            "showOutput": "always"
+        }
+    ]
+
+}

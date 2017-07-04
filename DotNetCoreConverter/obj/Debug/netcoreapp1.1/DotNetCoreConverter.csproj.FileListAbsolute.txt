@@ -1,0 +1,8 @@
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\bin\Debug\netcoreapp1.1\DotNetCoreConverter.deps.json
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\bin\Debug\netcoreapp1.1\DotNetCoreConverter.runtimeconfig.json
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\bin\Debug\netcoreapp1.1\DotNetCoreConverter.runtimeconfig.dev.json
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\bin\Debug\netcoreapp1.1\DotNetCoreConverter.dll
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\bin\Debug\netcoreapp1.1\DotNetCoreConverter.pdb
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\obj\Debug\netcoreapp1.1\DotNetCoreConverter.AssemblyInfo.cs
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\obj\Debug\netcoreapp1.1\DotNetCoreConverter.dll
+c:\Users\sean.swalling\Desktop\DotNetCoreConverter\DotNetCoreConverter\obj\Debug\netcoreapp1.1\DotNetCoreConverter.pdb
